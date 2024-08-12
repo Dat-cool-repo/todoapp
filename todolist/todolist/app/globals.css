@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  @apply text-center;
+}
+
+header {
+  @apply bg-gray-800 text-white py-4 text-center mb-6;
+}
+
+nav ul {
+  @apply flex justify-center list-none p-0;
+}
+
+nav ul li {
+  @apply mr-6;
+}
+
+nav ul li a {
+  @apply text-white font-bold px-3 py-2 rounded transition duration-300 hover:bg-gray-700;
+}
+
+main {
+  @apply flex justify-center items-center min-h-screen;
+}
+
+form {
+  @apply flex flex-col items-center bg-gray-800 p-8 rounded shadow-lg;
+}
+
+input, button {
+  @apply m-2 p-3 text-lg w-full max-w-sm;
+}
+
+input {
+  @apply bg-gray-700 text-white border border-gray-600 rounded;
+}
+
+button {
+  @apply bg-blue-500 text-white border-none rounded cursor-pointer transition duration-300;
+}
+
+button:hover {
+  @apply bg-blue-400;
+}
+
+footer {
+  @apply bg-gray-800 text-white text-center py-4 fixed bottom-0 w-full;
+}
+
+ul {
+  @apply list-none p-0;
+}
+
+li {
+  @apply bg-gray-800 m-2 p-4 rounded shadow;
+}
+
+li.completed {
+  @apply line-through text-gray-500;
+}
+
+.task-item {
+  @apply p-4 mb-2 border border-gray-600 rounded bg-gray-800;
+}
+.completed {
+  @apply line-through text-gray-500;
+}
